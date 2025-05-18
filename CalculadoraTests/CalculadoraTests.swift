@@ -3,8 +3,7 @@ import XCTest
 
 final class CalculadoraTests: XCTestCase {
 
-    // MARK: - Soma
-
+    // soma
     func testSomarDoisNumerosPositivos() {
         let resultado = ContentView().sum(num1: 5, num2: 3)
         XCTAssertEqual(resultado, 8)
@@ -20,8 +19,7 @@ final class CalculadoraTests: XCTestCase {
         XCTAssertNil(resultado)
     }
 
-    // MARK: - Subtração
-
+    // subtração
     func testSubtrairDoisNumeros() {
         let resultado = ContentView().subtract(num1: 10, num2: 4)
         XCTAssertEqual(resultado, 6)
@@ -37,8 +35,7 @@ final class CalculadoraTests: XCTestCase {
         XCTAssertNil(resultado)
     }
 
-    // MARK: - Multiplicação
-
+    // multiplicação
     func testMultiplicarDoisNumeros() {
         let resultado = ContentView().multiply(num1: 6, num2: 7)
         XCTAssertEqual(resultado, 42)
@@ -53,9 +50,8 @@ final class CalculadoraTests: XCTestCase {
         let resultado = ContentView().multiply(num1: nil, num2: nil)
         XCTAssertNil(resultado)
     }
-
-    // MARK: - Divisão
-
+    
+    // divisão
     func testDividirDoisNumeros() {
         let resultado = ContentView().divide(num1: 10, num2: 2)
         XCTAssertEqual(resultado, 5)
